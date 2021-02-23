@@ -11,7 +11,7 @@ import { Employees } from 'src/app/shared/employee/employee.model';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor(private service:EmployeeService, private toastr: ToastrService, private dialogRef:MatDialogRef<Employees>) { }
+  constructor(public service:EmployeeService, private toastr: ToastrService, private dialogRef:MatDialogRef<Employees>) { }
 
   departments=[]
 
