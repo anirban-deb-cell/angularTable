@@ -15,7 +15,7 @@ export class EmployeesComponent implements OnInit {
   searchKey:string;
   @ViewChild(MatPaginator,{static:false}) paginator: MatPaginator;
 
-  constructor(private service:EmployeeService, private dialog:MatDialog) { }
+  constructor(public service:EmployeeService, private dialog:MatDialog) { }
 
   ngOnInit() {
     this.service.fetchEmployees();
